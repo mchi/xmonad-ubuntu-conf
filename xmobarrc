@@ -13,9 +13,9 @@
 Config { 
   -- Set font and default foreground/background colors. Note that
   -- the height of xmobar is controlled by the font you use.
-  font = "xft:Ubuntu Mono-14",
-  bgColor = "black",
-  fgColor = "grey",
+  font = "xft:Ubuntu Mono-12",
+  bgColor = "#3C3B37",
+  fgColor = "#bdbdbd",
 
   -- Position is top left, taking up 95% of screen.
   -- You are likely to have to tweak the width here based on the width
@@ -53,6 +53,11 @@ Config {
       "-h", "green",
       "-l", "red"
     ] 10,
+    
+    -- Weather
+    Run Weather "KORD" [ "--template", "<fc=#bcbddc><skyCondition> | <tempF>°F | <rh>% | <pressure>hPa</fc>"
+                             ] 36000,
+
 
     -- To get volume information, we run a custom bash script.
     -- This is because the built-in volume support in xmobar is disabled
@@ -73,5 +78,5 @@ Config {
 
    -- Overall template for the layout of the xmobar contents. Note that
    -- space is significant and can be used to add padding.
-   template = "%StdinReader% }{ %battery% | %cpu% | %memory% | Vol: %myvolume%    <fc=#e6744c>%date%</fc>     "
+   template = "%StdinReader% }{ %battery% | %cpu% | %memory% | Vol: %myvolume%    %KORD%   <fc=#fdae6b>%date%</fc>     "
 }

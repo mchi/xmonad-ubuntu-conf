@@ -77,6 +77,7 @@ nitrogen --restore &
 # - Icons should be set to size "24".
 # - Kludges argument of "force_icons_size" forces all icons to really, truly 
 #   be the size we set.
+# #--kludges force_icons_size \
 # - window-strut "none" means windows are allowed to cover the tray. In
 #   other words, trust xmonad to handle this part.
 #
@@ -84,10 +85,9 @@ stalonetray \
   --icon-gravity E \
   --geometry 5x1-0+0 \
   --max-geometry 5x1-0+0 \
-  --background '#000000' \
+  --background '#3C3B37' \
   --skip-taskbar \
-  --icon-size 24 \
-  --kludges force_icons_size \
+  --icon-size 21 \
   --window-strut none \
 &
 
