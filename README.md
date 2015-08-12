@@ -1,6 +1,8 @@
 xmonad-ubuntu-conf
 ==================
 
+https://github.com/davidbrewer/xmonad-ubuntu-conf.git
+
 My xmonad config for Ubuntu 14.04 and 12.04, including package list, config files, and instructions. If you're still on Ubuntu 12.04, make sure to use the "precise" branch. The master branch is currently for 14.04.
 
 Overview
